@@ -27,7 +27,7 @@ function addTypeToSegments(segments: number[][], attributes: Attribute[]): Inlin
   return segments
     .map<InlineStyleRange | undefined>((segment) => {
       const types: InlineType[] = [];
-      let urlIndex: string = '';
+      let urlIndex = undefined;
 
       attributes.forEach((attribute) => {
         const length = segment[0] + segment[1];

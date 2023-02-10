@@ -20,7 +20,7 @@ function addTypeToSegments(segments, attributes) {
     return segments
         .map((segment) => {
         const types = [];
-        let urlIndex = '';
+        let urlIndex = undefined;
         attributes.forEach((attribute) => {
             var _a;
             const length = segment[0] + segment[1];
