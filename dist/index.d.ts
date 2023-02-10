@@ -11,7 +11,7 @@ interface Props {
     atomicHandler: (params: {
         block: Block;
         entityMap: EntityMap;
-    }) => JSX.Element;
+    }) => JSX.Element | null;
     customBlockHandler?: (params: {
         block: Block;
         entityMap: EntityMap;

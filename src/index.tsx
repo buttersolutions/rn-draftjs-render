@@ -16,7 +16,7 @@ interface Props {
   textProps?: TextProps;
   customStyles?: CustomStyles;
   navigate?: (url: string) => Promise<void>;
-  atomicHandler: (params: { block: Block; entityMap: EntityMap }) => JSX.Element;
+  atomicHandler: (params: { block: Block; entityMap: EntityMap }) => JSX.Element | null;
   customBlockHandler?: (params: { block: Block; entityMap: EntityMap }) => any;
 }
 
