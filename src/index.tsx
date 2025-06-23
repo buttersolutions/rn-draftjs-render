@@ -54,7 +54,7 @@ export function DraftJsRender(props: Props): JSX.Element {
     <View>
       {blocks.map<JSX.Element>((block: Block) => {
         const { key, type, text, data, inlineStyleRanges, entityRanges, depth } = block;
-        const itemData = { key, type, text, data, inlineStyleRanges, entityRanges, depth };
+        const itemData = { type, text, data, inlineStyleRanges, entityRanges, depth };
 
         switch (type) {
           case 'unstyled':
