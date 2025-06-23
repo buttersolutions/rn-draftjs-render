@@ -26,7 +26,7 @@ export function DraftJsRender(props) {
     return (<View>
       {blocks.map((block) => {
         const { key, type, text, data, inlineStyleRanges, entityRanges, depth } = block;
-        const itemData = { key, type, text, data, inlineStyleRanges, entityRanges, depth };
+        const itemData = { type, text, data, inlineStyleRanges, entityRanges, depth };
         switch (type) {
             case 'unstyled':
             case 'paragraph':
